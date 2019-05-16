@@ -22,6 +22,9 @@ class MyAppBar extends StatelessWidget {
               onPressed: null // null会禁用button
           ),
           // Expanded expands its child to fill the available space.
+          // 中间的title widget被标记为Expanded,
+          // 这意味着它会填充尚未被其他子项占用的的剩余可用空间。
+          // Expanded可以拥有多个children, 然后使用flex参数来确定他们占用剩余空间的比例。
           new Expanded(
               child: title
           ),
@@ -44,11 +47,14 @@ class MyScaffold extends StatelessWidget {
       // Column 是垂直方向的线性布局
       child: new Column(
         children: <Widget>[
+          // 在Column的顶部，放置了一个MyAppBar实例，
+          // 将一个Text widget作为其标题传递给应用程序栏。
           new MyAppBar(
             title: new Text(
               'Layla 💕💕💕'
             ),
           ),
+          // MyScaffold使用了一个Expanded来填充剩余的空间，正中间包含一条message。
           new Expanded(
               child: new Center(
                   child: new Text('你好哇 曹佳丽！'),
@@ -61,6 +67,8 @@ class MyScaffold extends StatelessWidget {
 }
 
 void main() {
+  // 为了继承主题数据，widget需要位于MaterialApp内才能正常显示，
+  // 因此我们使用MaterialApp来运行该应用。
   runApp(new MaterialApp(
     title: 'My app', // used by the OS task switcher
     home: new MyScaffold(),
