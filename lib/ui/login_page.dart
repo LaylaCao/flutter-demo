@@ -72,7 +72,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                       new Image(
                           width: 170,
                           height: 170,
-                          image: new AssetImage("images/apple.jpg")),
+                          image: new AssetImage("images/jiali.jpeg")),
                       new SizedBox(
                         height: 20,
                       ),

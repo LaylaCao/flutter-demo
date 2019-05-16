@@ -1,29 +1,5 @@
-//import 'package:flutter/material.dart';
-//import 'SplashPage.dart';
-//import 'HomePage.dart';
-//
-//void main() => runApp(new MyApp());
-//
-//class MyApp extends StatelessWidget {
-//// This widget is the root of your application.
-//  @override
-//  Widget build(BuildContext context) {
-//    return new MaterialApp(
-//      title: 'Todo',
-//      theme: new ThemeData(
-//        primarySwatch: Colors.blue,
-//      ),
-//      home: new SplashPage(), // 闪屏页
-//      routes: <String, WidgetBuilder>{ // 路由
-//        '/HomePage': (BuildContext context) => new HomePage()
-//      },
-//    );
-//  }
-//}
 import 'package:flutter/material.dart';
-import 'package:flutter_1/model/user.dart';
 import 'package:flutter_1/ui/home_page.dart';
-import 'package:flutter_1/ui/login_page.dart';
 import 'package:flutter_1/ui/user_provider.dart';
 import 'package:flutter_1/SplashPage.dart';
 
