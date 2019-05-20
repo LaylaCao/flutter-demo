@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 //许多widget都会使用一个GestureDetector为其他widget提供可选的回调。
 // 例如，IconButton、 RaisedButton、 和FloatingActionButton ，
@@ -10,6 +11,7 @@ void main() {
     home: new MyButton(),
   ));
 }
+
 
 class MyButton extends StatelessWidget {
   @override
@@ -28,10 +30,18 @@ class MyButton extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 8.0),
         decoration: new BoxDecoration(
           borderRadius: new BorderRadius.circular(5.0),
-          color: Colors.lightGreen[500],
+          color: Colors.white30,
         ),
         child: new Center(
-          child: new Text('Engage'),
+          child: new Text(
+              'Cao Jiali',
+            style: new TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.red[200],
+              decorationColor: Colors.white,
+              decorationStyle: TextDecorationStyle.wavy,
+            ),
+          ),
         ),
       ),
     );

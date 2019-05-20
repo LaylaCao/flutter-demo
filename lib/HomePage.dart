@@ -21,7 +21,6 @@ class _HomePage extends State<HomePage> {
           decorationStyle: TextDecorationStyle.wavy,
         ),
       ),
-
     );
   }
 }
