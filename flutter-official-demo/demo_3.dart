@@ -1,10 +1,24 @@
 import 'package:flutter/material.dart';
 
+//许多widget都会使用一个GestureDetector为其他widget提供可选的回调。
+// 例如，IconButton、 RaisedButton、 和FloatingActionButton ，
+// 它们都有一个onPressed回调，它会在用户点击该widget时被触发。
+
+void main() {
+  runApp(new MaterialApp(
+    title: 'Flutter Tutorial',
+    home: new MyButton(),
+  ));
+}
+
 class MyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // 该GestureDetector widget并不具有显示效果，而是检测由用户做出的手势。
+    // 在回调中，将消息打印到控制台。
+    // 您可以使用GestureDetector来检测各种输入手势，包括点击、拖动和缩放。
     return new GestureDetector(
+      // 当用户点击Container时， GestureDetector会调用它的onTap回调，
       onTap: () {
         print('MyButton was tapped');
       },
