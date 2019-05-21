@@ -29,13 +29,20 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.14.11"
-  cupertino_icons:
-    dependency: "direct main"
+  convert:
+    dependency: transitive
     description:
-      name: cupertino_icons
+      name: convert
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.1.2"
+    version: "2.1.1"
+  crypto:
+    dependency: transitive
+    description:
+      name: crypto
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.6"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -156,5 +163,12 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.0.8"
+  web_socket_channel:
+    dependency: "direct main"
+    description:
+      name: web_socket_channel
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.12"
 sdks:
   dart: ">=2.2.0 <3.0.0"
