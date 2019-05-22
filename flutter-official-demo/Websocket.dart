@@ -1,6 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:web_socket_channel/io.dart';
-import 'package:flutter/material.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 void main() => runApp(new MyApp());
@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
 class MyHomePage extends StatefulWidget {
   final String title;
   final WebSocketChannel channel;
@@ -29,6 +30,7 @@ class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => new _MyHomePageState();
 }
+
 
 class _MyHomePageState extends State<MyHomePage> {
   TextEditingController _controller = new TextEditingController();
@@ -42,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: new Padding(
         padding: const EdgeInsets.all(20.0),
         child: new Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             new Form(
               child: new TextFormField(
@@ -66,19 +68,20 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _sendMessage,
         tooltip: 'Send message',
         child: new Icon(Icons.send),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 
   void _sendMessage() {
-    if (_controller.text.isNotEmpty) {
+    if(_controller.text.isNotEmpty) {
       widget.channel.sink.add(_controller.text);
     }
   }
 
   @override
   void dispose() {
-//    widget.channel.sink.close();
+    widget.channel.sink.close();
     super.dispose();
   }
+
 }
