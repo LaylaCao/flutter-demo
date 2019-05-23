@@ -58,6 +58,9 @@ class _TapboxAState extends State<TapboxA> {
 //    );
 //  }
 //}
+
+
+// widget管理自己的状态
 void main() {
   runApp(new MaterialApp(
     title: 'Flutter Tutorial',
