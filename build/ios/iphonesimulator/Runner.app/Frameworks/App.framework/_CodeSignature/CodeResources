@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		4ys410hyy33Ox9feJDYAWhZlGJo=
+		jSMuv4DB3CO89Bd7Gp8OLFuEup8=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -27,6 +27,22 @@
 		<key>flutter_assets/images/apple.jpg</key>
 		<data>
 		gy+v7Q5uzpBgmQnDJpgxRCoN6rQ=
+		</data>
+		<key>flutter_assets/images/icon_circle.png</key>
+		<data>
+		LNM4dmPr4YXvtIiZcroWU8a6jcs=
+		</data>
+		<key>flutter_assets/images/icon_msg.png</key>
+		<data>
+		eT04rc+ulU2YeInNLKbzBrLC8to=
+		</data>
+		<key>flutter_assets/images/icon_sina.png</key>
+		<data>
+		1RUkzywYa6lo6z9wh7BTegBPIZg=
+		</data>
+		<key>flutter_assets/images/icon_wx.png</key>
+		<data>
+		DdKRHM8bGCB7cLmHkltiR6fXQkk=
 		</data>
 		<key>flutter_assets/images/jiali.jpeg</key>
 		<data>
@@ -54,7 +70,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		IGm5FQ0AEWmI4zkh5OPMsQZzGb0=
+		l2JSbbtnFzeKYr4xnj+fo1fTp6M=
 		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf</key>
 		<data>
@@ -79,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4ys410hyy33Ox9feJDYAWhZlGJo=
+			jSMuv4DB3CO89Bd7Gp8OLFuEup8=
 			</data>
 			<key>hash2</key>
 			<data>
-			h3BWR8zGNQKAIJI3s3RJUwpcZWQzovPTx32+cDG4f+M=
+			dyXyZbGk3CXY/T33NdZJPzxM+kkRbaqV9PkXrPmLG58=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -128,6 +144,50 @@
 			<key>hash2</key>
 			<data>
 			DyA3v5PRx2M6MwOSoImDPzqPxlAgZMPyVD2cGXs7Ysw=
+			</data>
+		</dict>
+		<key>flutter_assets/images/icon_circle.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LNM4dmPr4YXvtIiZcroWU8a6jcs=
+			</data>
+			<key>hash2</key>
+			<data>
+			+vNVSEn4VH5eO7De5s2Xj1yBr9u9Gdpjy185F5bImgQ=
+			</data>
+		</dict>
+		<key>flutter_assets/images/icon_msg.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eT04rc+ulU2YeInNLKbzBrLC8to=
+			</data>
+			<key>hash2</key>
+			<data>
+			VMvOoxA8zX/Y7mV3IkceLFD4wfl8LxdD7r/JjJ9hwRk=
+			</data>
+		</dict>
+		<key>flutter_assets/images/icon_sina.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1RUkzywYa6lo6z9wh7BTegBPIZg=
+			</data>
+			<key>hash2</key>
+			<data>
+			trbjb0jfnPbWvpwt/XrY1+MOeCHX34Np/VsWh9ngt0E=
+			</data>
+		</dict>
+		<key>flutter_assets/images/icon_wx.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DdKRHM8bGCB7cLmHkltiR6fXQkk=
+			</data>
+			<key>hash2</key>
+			<data>
+			y/+m7tJ2pulWL/UmTXe2s/unhmqkOM76CQG0RINlLA4=
 			</data>
 		</dict>
 		<key>flutter_assets/images/jiali.jpeg</key>
@@ -200,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IGm5FQ0AEWmI4zkh5OPMsQZzGb0=
+			l2JSbbtnFzeKYr4xnj+fo1fTp6M=
 			</data>
 			<key>hash2</key>
 			<data>
-			fF+9xBmHWAsNz3eIHOrcEcgsJfr6mFaa96FjfgYEVHk=
+			zxcNAToJQXzWnknBFZMxny7mlhXxyZR8Bcu4kpClYiQ=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf</key>
