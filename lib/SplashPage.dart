@@ -12,7 +12,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return new Image.asset(
-      "images/pretty.jpeg",
+      "images/闪屏@3x.png",
       fit: BoxFit.cover,
     );
   }
