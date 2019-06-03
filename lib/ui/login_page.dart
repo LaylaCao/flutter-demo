@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_1/SplashPage.dart';
 
 const String wx = '微信好友';
 const String wx_circle = '微信朋友圈';
@@ -71,7 +72,11 @@ class _LoginPageState extends State<LoginPage> {
     super.dispose();
     _cancelTimer();
   }
-
+  BoxDecoration myBoxDecoration() {
+    return BoxDecoration(
+      border: Border.all(),
+    );
+  }
   _startTimer() {
     _seconds = 10;
 
@@ -94,41 +99,11 @@ class _LoginPageState extends State<LoginPage> {
     _timer?.cancel();
   }
 
-  Widget _buildCustomBar() {
-    return new Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween, //子组件的排列方式为主轴两端对齐
-      children: <Widget>[
-        new InkWell(
-          child: new Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: new Icon(
-                Icons.clear,
-                size: 26.0,
-                color: Colors.grey[700],
-              )),
-          onTap: () {
-            Navigator.pop(context);
-          },
-        ),
-        new InkWell(
-          child: new Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: new Text(
-                "密码登录",
-                style: new TextStyle(fontSize: 16.0, color: Colors.grey[700]),
-              )),
-          onTap: () {
-            showTips();
-          },
-        ),
-      ],
-    );
-  }
 
   Widget _buildPhoneEdit() {
     var node = new FocusNode();
     return new Padding(
-      padding: const EdgeInsets.only(left: 40.0, right: 40.0),
+      padding: const EdgeInsets.only(left: 40.0, right: 40.0, top: 40.0),
       child: new TextField(
         onChanged: (str) {
           _phoneNum = str;
@@ -139,6 +114,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
         maxLines: 1,
         maxLength: 11,
+
         //键盘展示为号码
         keyboardType: TextInputType.phone,
         //只能输入数字
@@ -214,26 +190,19 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _buildLabel() {
-    return new Container(
-      margin: const EdgeInsets.only(top: 40.0, bottom: 20.0),
-      alignment: Alignment.center,
-      child: new Text(
-        "登录知乎日报，体验更多功能",
-        style: new TextStyle(fontSize: 24.0),
-      ),
-    );
-  }
 
   Widget _buildRegist() {
     return new Padding(
       padding: const EdgeInsets.only(left: 40.0, right: 40.0, top: 20.0),
       child: new RaisedButton(
-        color: Colors.blue,
+        color: Colors.lightGreen[700],
         textColor: Colors.white,
-        disabledColor: Colors.blue[100],
+        disabledColor: Colors.green[100],
         onPressed: (_phoneNum.isEmpty || _verifyCode.isEmpty) ? null : () {
-          showTips();
+          Navigator.push(
+            context,
+            new MaterialPageRoute(builder: (context) => new SplashPage()),
+          );
         },
         child: new Text(
           "登  录",
@@ -262,34 +231,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _buildThirdPartLogin() {
-    return new Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: menus_login.map((Menu m) {
-        return new GestureDetector(
-          onTap: () {
-            switch (m.index) {
-              case 0:
-                CommonSnakeBar.buildSnakeBarByKey(registKey, context, '点击了微信');
-                break;
-              case 1:
-                CommonSnakeBar.buildSnakeBarByKey(
-                    registKey, context, '点击了新浪微博');
-                break;
-            }
-          },
-          child: new Padding(
-              padding: const EdgeInsets.only(
-                  left: 24.0, top: 60.0, bottom: 12.0, right: 24.0),
-              child: new Image.asset(
-                m.icon,
-                width: 60.0,
-                height: 60.0,
-              )),
-        );
-      }).toList(),
-    );
-  }
+
 
   Widget _buildProtocol() {
     return new Padding(
@@ -297,7 +239,7 @@ class _LoginPageState extends State<LoginPage> {
       child: new Container(
         child: new Text.rich(
           new TextSpan(
-              text: '注册知乎日报代表你已阅读并同意 ',
+              text: '注册乌柠表示您已阅读并同意 ',
               style: new TextStyle(
                   fontSize: 14.0,
                   color: Colors.grey[500],
@@ -307,9 +249,9 @@ class _LoginPageState extends State<LoginPage> {
                     recognizer: new TapGestureRecognizer()
                       ..onTap = () {
                         CommonSnakeBar.buildSnakeBarByKey(
-                            registKey, context, '点击了知乎协议');
+                            registKey, context, '点击了乌柠协议');
                       },
-                    text: '知乎协议',
+                    text: '乌柠协议',
                     style: new TextStyle(
                       fontSize: 14.0,
                       color: Colors.blue,
@@ -343,13 +285,10 @@ class _LoginPageState extends State<LoginPage> {
   Widget _buildBody(){
     return new ListView(
       children: <Widget>[
-        _buildCustomBar(),
-        _buildLabel(),
         _buildPhoneEdit(),
         _buildVerifyCodeEdit(),
         _buildRegist(),
         _buildTips(),
-        _buildThirdPartLogin(),
         _buildProtocol(),
       ],
     );
@@ -375,6 +314,22 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return new Material(
       child: new Scaffold(
+        appBar: new AppBar(
+          title: new Text('登录',
+              style: new TextStyle(
+                  color: Colors.black87,
+                  fontSize: 22.0,
+              ),
+          ),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios),
+            color: Colors.grey,
+            tooltip: 'Navigation',
+            onPressed: () => debugPrint('Navigation button is pressed.'),
+          ),
+          backgroundColor: Colors.white,
+
+        ),
         key: registKey,
         backgroundColor: Colors.white,
         body: _buildBody(),
