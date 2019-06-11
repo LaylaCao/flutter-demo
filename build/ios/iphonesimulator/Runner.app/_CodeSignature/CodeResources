@@ -114,7 +114,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		/HwifUVuDIFr9M1viZpKc5q+cUg=
+		bA/c/pyzctjdXBkfUfjKRqXU0/o=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		SRkZUqMsWRjFL7G2aQMkns65NCw=
+		eFObPXWtYqqqx9n/x6n+tljjVeE=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/LICENSE</key>
 		<data>
-		j1U6jp3vNfW4cSBzaOWj+YlUdrA=
+		L5bcpiC0iQJvEFkQ45WL4xk3OPc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.ttf</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		gaX78llxoBttDN4B+G/UkIJxTXU=
+		BS0hvB3rva/Il91sPYn88+w9/gw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf</key>
 		<data>
@@ -536,11 +536,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/HwifUVuDIFr9M1viZpKc5q+cUg=
+			bA/c/pyzctjdXBkfUfjKRqXU0/o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qt0sK64JtevfU1r92JtjOS9XCqp4hZKjyLe9S4vnJtA=
+			my97enDIqCpHCUGWemIsxpuI12U5kWZ05E4txVrIrRw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -558,11 +558,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SRkZUqMsWRjFL7G2aQMkns65NCw=
+			eFObPXWtYqqqx9n/x6n+tljjVeE=
 			</data>
 			<key>hash2</key>
 			<data>
-			15BtkZmNYy98x6vbHKKkwrveVexPMevwz8zTGcEr9L0=
+			VAgT5f42ESF6eWnZ5GdA46sPl1qHoc9NhdCEWVKVL4s=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -591,11 +591,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j1U6jp3vNfW4cSBzaOWj+YlUdrA=
+			L5bcpiC0iQJvEFkQ45WL4xk3OPc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hn4NkYgeScBryqTG8waM9QLwL8aPEmUY3PhXPeRY3iI=
+			LkjTA5MxUJxxFkVpYBqPCf0N25TGBqvxDNtR1zXWYy0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.ttf</key>
@@ -745,11 +745,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gaX78llxoBttDN4B+G/UkIJxTXU=
+			BS0hvB3rva/Il91sPYn88+w9/gw=
 			</data>
 			<key>hash2</key>
 			<data>
-			5d52wPpOxiVQ367WrLHrNbVqZW24B0yiiEhhkcCJdyg=
+			LNiOQ/S5b/f/MEK60ywTKJrL1E5+zIJUMoqV80fHcQY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf</key>

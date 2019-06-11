@@ -1,13 +1,15 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart'; // Flutter UI 库
+import 'package:flutter/cupertino.dart'; // ios风格适配
+import 'package:flutter/foundation.dart'; // 核心库之一
 
+// 适配IOS
 final ThemeData iOSTheme = new ThemeData(
   primarySwatch: Colors.red,
   primaryColor: Colors.grey[400],
   primaryColorBrightness: Brightness.dark,
 );
 
+// 适配Android
 final ThemeData androidTheme = new ThemeData(
   primarySwatch: Colors.blue,
   accentColor: Colors.green,
@@ -15,7 +17,7 @@ final ThemeData androidTheme = new ThemeData(
 
 const String defaultUserName = "MeandNi";
 
-void main() => runApp(new MyApp());
+void main() => runApp(new MyApp()); // Dart程序的入口
 
 class MyApp extends StatelessWidget {
   @override
@@ -45,7 +47,7 @@ class ChatWindow extends State<Chat> with TickerProviderStateMixin {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("Chat Application"),
-        elevation:
+        elevation: // 控制应用栏下方阴影的大小
         Theme.of(ctx).platform == TargetPlatform.iOS ? 0.0 : 6.0,
       ),
       body: new Column(children: <Widget>[
@@ -53,7 +55,7 @@ class ChatWindow extends State<Chat> with TickerProviderStateMixin {
             child: new ListView.builder(
               itemBuilder: (_, int index) => _messages[index],
               itemCount: _messages.length,
-              reverse: true,
+              reverse: false,
               padding: new EdgeInsets.all(6.0),
             )),
         new Divider(height: 1.0),
