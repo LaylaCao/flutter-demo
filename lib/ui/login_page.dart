@@ -199,10 +199,7 @@ class _LoginPageState extends State<LoginPage> {
         textColor: Colors.white,
         disabledColor: Colors.green[100],
         onPressed: (_phoneNum.isEmpty || _verifyCode.isEmpty) ? null : () {
-          Navigator.push(
-            context,
-            new MaterialPageRoute(builder: (context) => new SplashPage()),
-          );
+          showTips();
         },
         child: new Text(
           "登  录",
